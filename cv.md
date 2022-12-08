@@ -7,7 +7,8 @@ Hello My name's Artem. I’m from Kiyv, and I want to learn Front-End Developmen
 ## Skils
 - Git, GitHub
 ## Code example
-~~~function multiply(a, b){
+~~~
+function multiply(a, b){
  return a * b
 }
 ~~~
