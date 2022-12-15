@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'Oswald';
 	src: url("assets/fonts/Oswald-Regular.ttf");
-	}
+}
 
 * {
     box-sizing: border-box;
@@ -132,7 +132,6 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	text-decoration: none;
 	margin: 0 auto;
 	color: #fff;
 }
