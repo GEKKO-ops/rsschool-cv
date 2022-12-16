@@ -1,0 +1,153 @@
+@font-face {
+	font-family: 'Oswald';
+	src: url("assets/fonts/Oswald-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-family: 'Oswald';
+	font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.header {
+	background-color: rgb(139, 137, 137);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-list {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	list-style: none;
+}
+
+.nav-link {
+	padding: 0 20px;
+	line-height: 50px;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 50px;
+	color: #050505;
+	transition: .3s;
+}
+
+.nav-link:hover {
+	color: crimson;
+}
+
+.main {
+	margin-bottom: auto;
+}
+
+.main-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.section {
+	width: calc(50% - 20px);
+	padding: 10px;
+    padding-bottom: 35px;
+}
+
+.section-profile {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 50px 30px 35px;
+}
+
+.section-profile-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.section-title {
+	font-size: 20px;
+	background-color: dimgray;
+	padding-left: 10px;
+	line-height: 50px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+.section-item {
+	position: relative;
+	padding-left: 0;
+	list-style: none;
+}
+
+.section-item::before {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: -30px;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #080808;
+	border-radius: 50%;
+}
+
+.main-title {
+	position: relative;
+	padding: 0;
+	margin-bottom: 20px;
+	background-color: white;
+	font-size: 32px;
+	font-weight: 300;
+	letter-spacing: 10px;
+	line-height: 50px;
+	word-spacing: 3px;
+}
+
+.footer {
+	background-color: dimgray;
+    padding: 20px;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	color: #fff;
+}
+
+.link {
+	text-decoration: none;
+	color: #8b8b8d;
+	transition: color 0.5s;
+}
+
+.link:hover {
+	color: #b41515;
+}
+
+@media (max-width: 768px) {
+	.section {
+		width: 100%;
+	  }
+}
