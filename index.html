@@ -54,13 +54,28 @@
       <h2 class="section-title">Skills</h2>
       <ul class="section-list">
         <li class="section-item skills">Git, GitHub</li>
+        <li class="section-item skills">VS Code</li>
+        <li class="section-item skills">HTML5, CSS3</li>
+        <li class="section-item skills">JavaScript Basics</li>
       </ul>
     </section>
     <section class="section" id="code-example">
       <h2 class="section-title">Code example</h2>
-      <pre class="pre"><code>function multiply(a, b) {
-        return a * b
-       }</code></pre>
+      <pre class="pre"><code>function combine() {
+        let argsArray = [...arguments];
+      let comboObj = {};
+      for(let i = 0; i < arguments.length; i++){
+        for(let key in arguments[i]){
+          if(!comboObj[key]){
+          comboObj[key] = arguments[i][key];
+          }
+          else {
+            comboObj[key] += arguments[i][key];
+          }
+        }
+      }
+    return comboObj;
+    }</code></pre>
     </section>
     <section class="section" id="work-experience">
       <h2 class="section-title">Work experience</h2>
@@ -68,9 +83,12 @@
     </section>
     <section class="section" id="education">
       <h2 class="section-title">Education</h2>
-      <p>National University of State Tax Service of Ukraine<br>
-        The directions of training: Jurisprudence (part-time education)<br>
-        Qualifications: Lawyer</p>
+      <ul>
+        <li>National University of State Tax Service of Ukraine
+        The directions of training: Jurisprudence (part-time education)
+        Qualifications: Lawyer</li>
+        <li>Courses: <a href="https://rs.school/js-stage0/" class="link" title="rs_school_js">JavaScript/Front-end. Stage 0</a></li>
+      </ul>
     </section>
     <section class="section" id="language">
       <h2 class="section-title">Language</h2>
