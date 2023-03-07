@@ -64,7 +64,7 @@
       <pre class="pre"><code>function combine() {
         let argsArray = [...arguments];
       let comboObj = {};
-      for(let i = 0; i &lt arguments.length; i++){
+      for(let i = 0; i &lt; arguments.length; i++){
         for(let key in arguments[i]){
           if(!comboObj[key]){
           comboObj[key] = arguments[i][key];
